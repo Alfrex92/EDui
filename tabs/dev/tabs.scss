@@ -20,17 +20,19 @@
     }
   }
 
-  .panels {
+.panels {
+    position: relative;
+    z-index: 10;
+}
 
-  }
-
-  .panel {
-    display : none;
-    border : 1px solid #ccc;
-    padding : 1em;
+.panel {
+    position: absolute;
+    left: -50000px;
 
     &.active {
-      display : block;
+        position: relative;
+        left:0;
     }
-  }
 }
+  
+
